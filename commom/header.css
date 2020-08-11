@@ -49,7 +49,11 @@
 }
 .header .right .nav:hover .select{
   opacity: 1;
-  transition: opacity 2s;
+  transition: opacity 3s;
+}
+.header .right .nav .select .item:hover{
+  border-bottom: 1px solid #fff;
+  transition: borderBottom 15s;
 }
 .header .right .nav .select .item{
   padding-top: 6px;

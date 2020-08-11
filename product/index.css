@@ -1,0 +1,70 @@
+.main1 {
+  height: 100vh;
+  background: url("./img/index-6.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main1 .wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 104px;
+}
+
+.main1 .wrapper .title {
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.main1 .wrapper .tip {
+  padding-bottom: 44px;
+  font-size: 18px;
+}
+
+.main1 .wrapper .arrow {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  bottom: 66px;
+  left: 50%;
+  margin-left: -19px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s ease infinite;
+  /* Safari 和 Chrome */
+}
+
+@keyframes arrow {
+  from {
+    bottom: 66px;
+  }
+
+  50% {
+    bottom: 40px
+  }
+
+  to {
+    bottom: 66px;
+  }
+}
+
+@-webkit-keyframes marrowymove
+
+/*Safari and Chrome*/
+  {
+  from {
+    bottom: 66px;
+  }
+
+  50% {
+    bottom: 40px
+  }
+  to {
+    bottom: 66px;
+  }
+}
