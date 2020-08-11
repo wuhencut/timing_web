@@ -1,8 +1,12 @@
+.page{
+  position: relative;
+}
 .main1 {
   height: 100vh;
   background: url("./img/index-6.png") center center no-repeat;
   background-size: cover;
   position: relative;
+  z-index: 99;
 }
 
 .main1 .wrapper {

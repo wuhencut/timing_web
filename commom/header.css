@@ -8,6 +8,7 @@
   margin-left: -600px;
   color: #fff;
   padding-top: 16px;
+  z-index: 100;
 }
 .header .left{ 
   flex: 1;
@@ -59,4 +60,6 @@
   padding-top: 6px;
   display: block;
   white-space: nowrap;
+  color: #fff;
+  text-decoration: none;
 }
