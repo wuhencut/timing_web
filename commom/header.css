@@ -22,6 +22,7 @@
   text-decoration: none;
   margin-right: 40px;
   cursor: pointer;
+  position: relative;
 }
 .header .right .nav .select-title{
   display: flex;
@@ -31,4 +32,27 @@
   margin-left: 8px;
   height: 6px;
   margin-top: 8px;
+}
+
+.header .right .nav .select {
+  position: absolute;
+  top: 20px;
+  opacity: 0;
+  font-size: 14px;
+}
+.header .right .nav .arrow-down{
+  transform: rotate(0deg);
+}
+.header .right .nav:hover .arrow-down{
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+.header .right .nav:hover .select{
+  opacity: 1;
+  transition: opacity 2s;
+}
+.header .right .nav .select .item{
+  padding-top: 6px;
+  display: block;
+  white-space: nowrap;
 }
