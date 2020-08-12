@@ -114,6 +114,7 @@
   text-align: center;
   display: inline-block;
   cursor: pointer;
+  text-decoration: none;
 }
 .main3 .wrapper .item .content .btn.btn-white{
   background-color: #fff;
