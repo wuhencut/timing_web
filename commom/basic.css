@@ -20,6 +20,9 @@ p{
 .page{
   min-width: 1200px;
 }
+.txt-bold{
+  font-weight: bold;
+}
 .txt-s56{
   font-size: 56px;
 }
@@ -47,6 +50,9 @@ p{
 }
 .flex-s1{
   flex: 1;
+}
+.txt-center{
+  text-align: center;
 }
 .txt-left{
   text-align: left;

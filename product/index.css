@@ -72,3 +72,72 @@
     bottom: 66px;
   }
 }
+.main2{
+  width: 982px;
+  height: 978px;
+  margin: 0 auto;
+  padding-top: 98px;
+}
+.main2 .title{
+  font-size: 32px;
+  padding-bottom: 90px;
+}
+.main2 .img{
+  width: 100%;
+}
+.main3{
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 98px;
+}
+.main3 .img{
+  width: 100%;
+}
+.main4{
+  height: 1000px;
+  background: url("./img/index-3.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main4 .title {
+  font-size: 32px;
+  padding-top: 98px;
+}
+.main4 .img1 {
+  width: 586px;
+  height: 294px;
+  position: absolute;
+  left: 50%;
+  margin-left: -520px;
+  bottom: 128px;
+}
+.main4 .img2 {
+  height: 586px;
+  width: 294px;
+  position: absolute;
+  right: 50%;
+  margin-right: -400px;
+  bottom: 128px;
+}
+.main5{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 98px;
+}
+.main5 .title{
+  font-size: 32px;
+  padding-bottom: 54px;
+}
+.main5 .tip{
+  width: 1018px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+}
+.main5 .wrapper{
+  height: 446px;
+}
+.main5 .tip-wrapper{
+  padding: 100px 0  84px 0;
+  background: #f4f4f4;
+}
