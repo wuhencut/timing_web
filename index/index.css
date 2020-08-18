@@ -8,10 +8,11 @@
 }
 
 .main1 .number-item {
-  width: 60px;
+  width: 50px;
   height: 80px;
   display: inline-block;
   color: #fff;
+  font-family: "Din";
 }
 
 .main1 .number-item span {
@@ -30,7 +31,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  font-size: 80px;
+  font-size: 76px;
   transform: translate(-50%, 0);
   transition: transform 1s ease-in-out;
   letter-spacing: 10px;
@@ -56,7 +57,7 @@
 .main2 .content1 .tip {
   width: 800px;
   margin: 0 auto;
-  font-size: 12px;
+  font-size: 14px;
   padding-bottom: 60px;
   text-align: left;
 }
