@@ -21,9 +21,10 @@ new Vue({
       }
       let now = new Date().getTime(),
       day = 24 * 60 * 60 * 1000;
-      if((now - this.timeTemp) % day >= 1){
+      let days = parseInt((now - this.timeTemp) / day)
+      if(days >= 1){
         // 为了不显得数字0特别多导致很假，选择 2918作为大概数字
-        this.computeNumber = this.computeNumber - 0 + 2918 + "";
+        this.computeNumber = this.computeNumber - 0 + 2918 * days + "";
         this.computeNumber = this.computeNumber.split("");
         this.setNumberTransform();
       }
