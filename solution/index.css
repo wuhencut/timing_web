@@ -96,7 +96,6 @@
 }
 .main2 .img3{
   width: 688px;
-  height: 627px;
   margin: 0 auto;
 }
 .main3 {
@@ -180,5 +179,5 @@
 }
 .main4 .wrapper .item:hover .content{
   bottom: 0;
-  transition: bottom 1s;
+  transition: bottom 0.5s;
 }
