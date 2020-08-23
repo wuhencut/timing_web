@@ -8,8 +8,8 @@
 }
 
 .main1 .number-item {
-  width: 50px;
-  height: 80px;
+  width: 60px;
+  height: 100px;
   display: inline-block;
   color: #fff;
   font-family: "Din";
@@ -31,16 +31,25 @@
   position: absolute;
   top: 0;
   left: 50%;
-  font-size: 76px;
+  font-size: 98px;
   transform: translate(-50%, 0);
   transition: transform 1s ease-in-out;
   letter-spacing: 10px;
+}
+.main1 .title{
+  padding-bottom: 20px;
 }
 
 .main2 .content1 {
   height: 430px;
   text-align: center;
   padding-top: 100px;
+}
+
+.main2 .content1 .tip1{
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
 }
 
 .main2 .content1 .title {
@@ -125,6 +134,11 @@
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
+  cursor: pointer;
+}
+.main3 .wrapper .item .content .btn.btn-black:hover{
+  background-color: #fff;
+  color:#000;
 }
 .main3 .wrapper .item img{
   width: 600px;

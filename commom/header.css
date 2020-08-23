@@ -7,7 +7,6 @@
   left: 50%;
   margin-left: -600px;
   color: #fff;
-  padding-top: 16px;
   z-index: 100;
 }
 .header .left{ 
@@ -24,6 +23,10 @@
   margin-right: 40px;
   cursor: pointer;
   position: relative;
+  padding: 16px 10px;
+}
+.header .right .nav:hover{
+  background: rgba(0, 0, 0, 0.48);
 }
 .header .right .nav .select-title{
   display: flex;
@@ -37,9 +40,11 @@
 
 .header .right .nav .select {
   position: absolute;
-  top: 20px;
+  top: 51px;
+  left: 0;
   opacity: 0;
   font-size: 14px;
+  background: rgba(0, 0, 0, 0.48);
 }
 .header .right .nav .arrow-down{
   transform: rotate(0deg);
@@ -50,11 +55,9 @@
 }
 .header .right .nav:hover .select{
   opacity: 1;
-  transition: opacity 3s;
 }
 .header .right .nav .select .item:hover{
-  border-bottom: 1px solid #fff;
-  transition: borderBottom 15s;
+  /* border-bottom: 1px solid #fff; */
 }
 .header .right .nav .select .item{
   padding-top: 6px;
@@ -62,4 +65,5 @@
   white-space: nowrap;
   color: #fff;
   text-decoration: none;
+  padding: 6px 10px;
 }
