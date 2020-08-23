@@ -5,13 +5,17 @@ new Vue({
       computeNumber: "",
       timer: null,
       timeTemp: 1596988800000, // 2020-8-10 00:00:00时间戳，每24小时添加2900kg
+      isSafari: false
     }
   },
   mounted() {
     this.computeNumber = ["6", "0", "0", "8"];
+    if(/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)){
+      this.isSafari = true;
+    }
     setTimeout(() => {
       this.increaseNumber();
-    }, 1000);
+    }, 100);
   },
   methods: {
     // 定时增长数字

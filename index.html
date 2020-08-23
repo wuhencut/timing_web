@@ -49,7 +49,7 @@
       <div class="content" data-scroll-reveal="enter top over 0.4s">
         <p class="title txt-s24">我们正在为城市“青厨”垃圾</p>
         <div class="flex">
-          <ul style="padding: 0">
+          <ul style="padding: 0" v-if="!isSafari">
             <!-- :class="{'number-item': !isNaN(item)}" -->
             <li class="number-item" v-for="(item, index) in computeNumber" :key="index">
               <span>
@@ -58,6 +58,7 @@
               </span>
             </li>
           </ul>
+          <span v-else class="scroll-num">{{computeNumber.join("")}}</span>
           <span style="font-size: 44px;padding-left: 10px">kg</span>
         </div>
       </div>
