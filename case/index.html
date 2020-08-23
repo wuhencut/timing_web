@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="page">
+  <div id="page" class="page">
     <div class="header">
       <div class="left flex">
         Timinghub
@@ -60,8 +60,17 @@
       </div>
     </div>
 
+    <div class="video-wrapper" v-if="showVideo">
+      <img class="img" @click="showVideo = false" src="./img/close.png" alt="">
+      <video class="video" controls poster="./img/index-7.png"
+        src="
+      https://timing-web.oss-cn-hangzhou.aliyuncs.com/video/%E7%A2%B3%E6%98%8E-%E9%9D%92%E5%8E%A8%E8%AE%BE%E5%A4%87.mp4"></video>
+    </div>
+
     <div class="main2">
-      <p class="title" data-scroll-reveal="enter bottom over 1s after 0.5s">环境改造</p>
+      <p class="title" data-scroll-reveal="enter bottom over 1s">运行情况</p>
+      <img @click="showVideo = true" class="img1" src="./img/index-7.png" alt="">
+      <p class="title" data-scroll-reveal="enter bottom over 1s">环境改造</p>
       <div class="wrapper">
         <div class="item">
           <img class="img" data-scroll-reveal="enter bottom over 1s after 0.5s" src="./img/index-2.png" alt="">
@@ -75,7 +84,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="item">
           <img class="img" src="./img/index-3.png" alt="" data-scroll-reveal="enter bottom over 1s after 0.5s">
           <div class="content" data-scroll-reveal="enter bottom over 1s after 0.5s">
@@ -95,14 +104,16 @@
         <div class="item" data-scroll-reveal="enter bottom over 1s after 0.5s">
           <img class="img" src="./img/index-4.png" alt="">
         </div>
-        
+
         <div class="item" data-scroll-reveal="enter bottom over 1s after 0.5s">
           <img class="img" src="./img/index-5.png" alt="">
         </div>
       </div>
 
-      <div data-scroll-reveal="enter bottom over 1s after 0.5s" class="tip3 txt-s20 txt-bold txt-center">学生GP环保社了解垃圾处理的“奥秘”</div>
-      <p data-scroll-reveal="enter bottom over 1s after 0.5s" class="tip4 txt-s14 txt-center">从让孩子们深刻了解到垃圾处理背后的原理、工艺流程和制造过程。使他们对 <br>环境问题与解决方案有更深层次的理解</p>
+      <div data-scroll-reveal="enter bottom over 1s after 0.5s" class="tip3 txt-s20 txt-bold txt-center">
+        学生GP环保社了解垃圾处理的“奥秘”</div>
+      <p data-scroll-reveal="enter bottom over 1s after 0.5s" class="tip4 txt-s14 txt-center">
+        从让孩子们深刻了解到垃圾处理背后的原理、工艺流程和制造过程。使他们对 <br>环境问题与解决方案有更深层次的理解</p>
     </div>
 
     <!-- footer -->
@@ -145,22 +156,31 @@
 </body>
 <script src="../lib/swiper.min.js"></script>
 <script src="../lib/scrollReveal.js"></script>
+<script src="../lib/vue.min.js"></script>
 <script>
-  (function () {
-    window.scrollReveal = new scrollReveal({
-      reset: true,
-      move: '100px'
-    });
-  })();
-  new Swiper(".swiper-container", {
-    loop: false,
-    speed: 1000,
-    slidesPerView: 5,
-    spaceBetween: 12,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+  new Vue({
+    el: "#page",
+    data() {
+      return {
+        showVideo: false,
+      }
     },
+    mounted() {
+      new Swiper(".swiper-container", {
+        loop: false,
+        speed: 1000,
+        slidesPerView: 5,
+        spaceBetween: 12,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+      window.scrollReveal = new scrollReveal({
+        reset: true,
+        move: '100px'
+      });
+    }
   })
 </script>
 

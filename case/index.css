@@ -17,6 +17,11 @@
 .main2{
   padding: 20px 0 100px 0 ;
 }
+.main2 .img1 {
+  width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
 .main2 .wrapper{
   width: 1200px;
   margin: 0 auto;
@@ -52,4 +57,36 @@
 }
 .main2 .tip4{
   color: #333333;
+}
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.video-wrapper .video{
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+  outline: none;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -300px;
+  cursor: pointer;
+}
+
+.video-wrapper .img{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+  right: 100px;
 }
