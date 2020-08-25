@@ -1,0 +1,27 @@
+name: UploadToOss
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  # build job 我们用来做持续构建
+  build:
+    # 构建运行的环境
+    runs-on: ubuntu-latest
+    # 构建步骤
+    steps:
+    # 复用 actions/checkout@v1 action，拉取最新代码
+    - uses: actions/checkout@v1
+    # 用来上传到oss
+    - uses: manyuanrong/setup-ossutil@v1.0
+    with:
+      # endpoint 可以去oss控制台上查看
+      endpoint: "oss-cn-hangzhou.aliyuncs.com"
+      # 使用我们之前配置在secrets里面的accesskeys来配置ossutil
+      access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+      access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+    - name: Deply To OSS
+      run: ossutil cp public oss://timing-web/ -rf
