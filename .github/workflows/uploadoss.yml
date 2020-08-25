@@ -26,4 +26,4 @@ jobs:
           access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
 
       - name: cp files to aliyun
-        run: ossutil cp -rf ./ oss://timing-web/
+        run: ossutil cp -rf ./* oss://timing-web/
