@@ -153,11 +153,10 @@
 }
 
 .main4 {
-  box-sizing: border-box;
   padding-top: 96px;
   height: 100vh;
   background: url("./imgs/index-6.png") center center no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .main4 .title {
   text-align: center;
