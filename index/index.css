@@ -59,7 +59,7 @@
 }
 
 .main2 .content1 .img1 {
-  width: 1200px;
+  width: 924px;
   margin: 0 auto;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .main3 .wrapper {
-  width: 1200px;
+  width: 924px;
   margin: 0 auto;
 }
 
@@ -97,8 +97,8 @@
 }
 
 .main3 .wrapper .item .content {
-  width: 600px;
-  padding-top: 90px;
+  width: 462px;
+  padding-top: 12px;
 }
 
 .main3 .wrapper .item .content .line {
@@ -141,8 +141,8 @@
   color:#000;
 }
 .main3 .wrapper .item img{
-  width: 600px;
-  height: 338px;
+  width: 462px;
+  height: 260px;
   object-fit: cover;
 }
 
