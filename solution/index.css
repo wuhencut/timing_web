@@ -103,14 +103,14 @@
   color: #fff;
 }
 .main3 .wrapper{
-  width: 1200px;
+  width: 976px;
   margin: 0 auto;
   padding-bottom: 200px;
   display: flex;
   justify-content: space-between;
 }
 .main3 .wrapper .item {
-  width: 550px;
+  width: 468px;
   color:#fff;
   text-align: center;
 }
@@ -119,8 +119,7 @@
   width: 100%;
 }
 .main3 .wrapper .item .tip1{
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 20px;
   padding-top: 30px;
   padding-bottom: 12px;
 }
@@ -140,7 +139,7 @@
   padding-top: 100px;
 }
 .main4 .wrapper{
-  width: 1200px;
+  width: 968px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -148,7 +147,7 @@
 }
 
 .main4 .wrapper .item{
-  width: 590px;
+  width: 474px;
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
