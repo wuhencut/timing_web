@@ -13,6 +13,17 @@
   <link rel="stylesheet" href="../commom/header.css?v=1">
   <link rel="stylesheet" href="../commom/footer.css?v=1">
   <link rel="stylesheet" href="./index.css?v=1">
+  <style>
+    .my-button-disabled{
+      opacity:0;
+    }
+    .swiper-button-prev {
+      outline: none;
+    }
+    .swiper-button-next {
+      outline: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -64,7 +75,7 @@
     </div>
     <a name="anchor2"></a>
     <div class="main3">
-      <img src="./img/index-2.png" alt="">
+      <img class="img" src="./img/index-2.png" alt="">
     </div>
     <a name="anchor3"></a>
     <div class="main4">
@@ -105,8 +116,19 @@
               <img class="img2" src="./img/index-17.png" alt="">
             </div>
             <div class="swiper-slide">
-              <img class="img1" src="./img/index-12.png" alt="">
-              <img class="img2" src="./img/index-17.png" alt="">
+              <img class="img1" src="./img/index-19.png" alt="">
+              <img class="img2" src="./img/index-18.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="img1" src="./img/index-20.png" alt="">
+              <img class="img2" src="./img/index-21.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="img1" src="./img/index-22.png" alt="">
+              <img class="img2" src="./img/index-23.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="img1" src="./img/index-24.png" alt="">
             </div>
           </div>
         </div>
@@ -177,8 +199,8 @@
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+      disabledClass: 'my-button-disabled'
     },
   })
 </script>
-
 </html>
