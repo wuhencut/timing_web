@@ -155,7 +155,7 @@
 .main4 {
   padding-top: 96px;
   height: 100vh;
-  background: url("./imgs/index-6.png") center center no-repeat;
+  background: url("../about/img/index-6.png") center center no-repeat;
   background-size: cover;
 }
 .main4 .title {
