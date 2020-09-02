@@ -85,6 +85,31 @@
 .main2 .img{
   width: 100%;
 }
+.main2 .wrapper {
+  width: 930px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 120px;
+}
+.main2 .wrapper .item {
+  width: 310px;
+  height: 190px;
+  display: flex;
+}
+.main2 .wrapper .item .left{
+  width: 26px;
+  height: 26px;
+  margin-right: 14px;
+}
+.main2 .wrapper .item .right {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.main2 .wrapper .item .right .title{
+  font-size: 16px;
+  padding-bottom: 4px;
+}
 .main3{
   width: 1200px;
   margin: 0 auto;
