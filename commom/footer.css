@@ -10,7 +10,10 @@
 .footer .law-info{
   text-align: center;
   padding-bottom: 20px;
+}
+.footer .law-info a{
   color: hsl(0, 0%, 40%);
+  text-decoration: none;
 }
 .footer .wrapper .info{
   flex: 1
