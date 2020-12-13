@@ -94,3 +94,39 @@
   width: 4.18rem;
   height: 3.73rem;
 }
+
+/* 
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s ease infinite;
+@keyframes arrow {
+  from {
+    bottom: 66px;
+  }
+
+  50% {
+    bottom: 40px
+  }
+
+  to {
+    bottom: 66px;
+  }
+}
+
+@-webkit-keyframes arrow
+{
+  from {
+    bottom: 66px;
+  }
+
+  50% {
+    bottom: 40px
+  }
+  to {
+    bottom: 66px;
+  }
+}
+    
+    
+
+    
+*/
