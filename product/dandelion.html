@@ -3,31 +3,37 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>碳明科技（Timing）官网</title>
-  <meta name="description" content="碳明科技是一家专注于实现垃圾就地资源化利用的科技创新型企业，产品涵盖不同体量的湿垃圾就地处理设备及物联网管理系统。公司拥有多项自主研发知识产权和一流的研发团队，核心技术包括高温破壁、干化脱水、炭化处理等。">
+  <meta name="description"
+    content="碳明科技是一家专注于实现垃圾就地资源化利用的科技创新型企业，产品涵盖不同体量的湿垃圾就地处理设备及物联网管理系统。公司拥有多项自主研发知识产权和一流的研发团队，核心技术包括高温破壁、干化脱水、炭化处理等。">
   <link rel="icon" href="../favicon.ico">
   <link rel="stylesheet" href="../lib/swiper.min.css">
   <link rel="stylesheet" href="../commom/basic.css?v=1">
   <link rel="stylesheet" href="../commom/header.css?v=1">
   <link rel="stylesheet" href="../commom/footer.css?v=3">
-  <link rel="stylesheet" href="./index.css?v=1">
+  <link rel="stylesheet" href="./dandelion.css?v=1">
+  <style>
+    .my-button-disabled {
+      opacity: 0;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="page" id="page">
-    <div style="color: #000;" class="header">
+  <div id="app">
+    <!-- header -->
+    <div class="header">
       <div class="left flex">
         <span style="margin-right: 16px">碳明科技</span> TIMING
       </div>
       <div class="right">
         <a class="nav" href="../index.html">首页</a>
         <div class="nav">
-          <div class="select-title">产品 <img class="arrow-down" src="../static/arrow-down-white.png" alt="">
+          <div class="select-title">硬件产品 <img class="arrow-down" src="../static/arrow-down-white.png" alt="">
             <div class="select">
               <a class="item" href="#anchor1">青厨处理设备</a>
-              <a class="item" href="./dandelion.html">蒲公英分布式管理系统</a>
             </div>
           </div>
         </div>
@@ -49,44 +55,14 @@
         <a class="nav" href="./about/index.html">关于我们</a>
       </div>
     </div>
-    <a name="anchor1"></a>
-    <!-- main -->
+
     <div class="main1">
-      <div class="swiper-container swiper1" id="swiper1">
+      <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="http://www.timinghub.com/assets/product/index/3.png" alt="">
-            <div class="box txt-black">
-              <p class="title">青厨垃圾处理设备</p>
-              <p class="tip">针对垃圾类型: 厨余垃圾、湿垃圾、易腐垃圾、有机物</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="http://www.timinghub.com/assets/product/index/4.png" alt="">
-            <div class="box txt-black">
-              <p class="title">青厨垃圾处理设备</p>
-              <p class="tip">针对垃圾类型: 厨余垃圾、湿垃圾、易腐垃圾、有机物</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="http://www.timinghub.com/assets/product/index/2.png" alt="">
-            <div class="box txt-white">
-              <p class="title">青厨垃圾处理设备</p>
-              <p class="tip">针对垃圾类型: 厨余垃圾、湿垃圾、易腐垃圾、有机物</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="http://www.timinghub.com/assets/product/index/1.png" alt="">
-            <div class="box txt-white">
-              <p class="title">青厨垃圾处理设备</p>
-              <p class="tip">针对垃圾类型: 厨余垃圾、湿垃圾、易腐垃圾、有机物</p>
-            </div>
-          </div>
+          <div class="swiper-slide"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </div>
-
     <!-- footer -->
     <div class="footer">
       <div class="wrapper">
@@ -132,5 +108,6 @@
 </body>
 <script src="../lib/swiper.min.js"></script>
 <script src="../lib/vue.min.js"></script>
-<script src="./index.js"></script>
+<script src="./dandelion.js"></script>
+
 </html>

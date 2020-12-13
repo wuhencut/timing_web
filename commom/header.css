@@ -13,6 +13,7 @@
   flex: 1;
   font-size: 22px;
   font-weight: bold;
+  line-height: 40px;
 }
 .header .right{
   display: flex;
@@ -55,9 +56,6 @@
 }
 .header .right .nav:hover .select{
   opacity: 1;
-}
-.header .right .nav .select .item:hover{
-  /* border-bottom: 1px solid #fff; */
 }
 .header .right .nav .select .item{
   padding-top: 6px;
