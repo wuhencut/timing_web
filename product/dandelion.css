@@ -1,3 +1,96 @@
 .txt-black{
   color: #000;
 }
+.main1 {
+  position: relative;
+  background: url("http://www.timinghub.com/assets/product/dandelion/1.png") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.main1 .box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  height: 1.8rem;
+  text-align: center;
+  width: 100%;
+  font-size: 0.36rem;
+  font-weight: bold;
+}
+.main1 .box .img{
+  width: 0.38rem;
+  height: 0.38rem;
+  margin-top: 0.4rem;
+}
+.main2 {
+  width: 12rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1.2rem;
+  display: flex;
+}
+.main2 .box1{
+  flex: 1;
+}
+.main2 .tip{
+  padding-left: 0.1rem;
+  font-size: 0.36rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+.main2 .item{
+  padding-bottom: 0.3rem;
+  display: flex;
+}
+.main2 .item .img-box{
+  width: 0.6rem;
+  text-align: center;
+  padding-top: 0.06rem;
+}
+.main2 .item .box4{
+  flex: 1;
+}
+.main2 .item .box3 .title {
+  font-size: 0.2rem;
+  font-weight: bold;
+}
+.main2 .item .box3 .tip1{
+  font-size: 0.16rem;
+}
+.main2 .box2 {
+  flex: 1;
+}
+.main2 .box2 .img1{
+  width: 5.57rem;
+  height: 4.04rem
+}
+
+.main2 .box2 .img2 {
+  width: 5.27rem;
+  height: 3.63rem;
+}
+.main2 .box4{
+  width: 4.08rem;
+  display: inline-block;
+  text-align: left;
+}
+.txt-right{
+  text-align: right;
+}
+.txt-left{
+  text-align: left;
+}
+.bg-gray{
+  background-color: #F7F7F7;
+}
+
+.box2 .img3{
+  width: 5.5rem;
+  height: 4.25rem;
+}
+.box2 .img4{
+  width: 4.18rem;
+  height: 3.73rem;
+}
