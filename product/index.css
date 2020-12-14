@@ -7,6 +7,10 @@
 .header .right .nav .select .item{
   color: #000;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .txt-white{
   color: #fff;
@@ -14,10 +18,28 @@
 .main1 {
   width: 100%;
   height: 100vh;
+  position: relative;
+}
+.main1 .box{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.main1 .box .title{
+  font-size: 0.36rem;
+  font-weight: bold;
+  padding-bottom: 0.1rem;
+}
+.main1 .box .tip{
+  font-size: 0.2rem;
+  padding-bottom: 1rem;
 }
 .swiper1 {
   width: 100%;
-  height: 100vh
+  height: 100vh;
+  position: relative;
 }
 .swiper1 .swiper-slide{
   width: 100%;
@@ -28,4 +50,415 @@
   display: block;
   width: 100%;
   object-fit: cover;
+}
+:root {
+  --swiper-theme-color: #46AF9F
+}
+.swiper-pagination-bullet {
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 0;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 0.1rem;
+}
+.main2 {
+  padding: 1rem 0 1.5rem 0;
+  width: 12rem;
+  margin: 0 auto;
+  display: flex;
+}
+.main2 .item{
+  flex: 1;
+}
+.main2 .item .title{
+  font-size: 0.32rem;
+  font-weight: bold;
+  padding-bottom: 0.6rem;
+  text-align: center;
+}
+.main2 .item .box{
+  border-right: 0.04rem solid #46AF9F;
+  padding: 0 0.45rem;
+  font-size: 0.16rem;
+  width: 2.7rem;
+}
+.main2 .item:last-child .box{
+  border-right: 0;
+}
+.main-title{
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+.main-title>.title{
+  display: inline-block;
+  position: relative;
+  padding: 0 0.2rem;
+  font-size: 0.36rem;
+  font-weight: bold;
+}
+.main-title .title::after{
+  content: " ";
+  width: 0.16rem;
+  height: 0.2rem;
+  background: url("http://www.timinghub.com/assets/product/index/5.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: -0.16rem;
+  top: 50%;
+  margin-top: -0.1rem
+}
+.main-title .title::before{
+  content: " ";
+  width: 0.16rem;
+  height: 0.2rem;
+  background: url("http://www.timinghub.com/assets/product/index/6.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: -0.16rem;
+  top: 50%;
+  margin-top: -0.1rem
+}
+.main3 {
+  width: 11rem;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+.main3 .box{
+  display: flex;
+  height: 1.7rem;
+  margin-bottom: 0.32rem;
+}
+.main3 .box .box1 {
+  border-radius: 0.2rem;
+  background: #D5CA5E;
+  width: 2.18rem;
+  font-size: 0.32rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding-top: 0.4rem;
+  border-right: 1px solid #fff;
+  margin-right: -0.14rem;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 10px 10px #dedede;
+}
+.main3 .box .box2 {
+  padding-left: 0.66rem;
+  padding-top: 0.46rem;
+  background: #D5CA5E;
+  flex: 1;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+.main3 .box .box2 .title{
+  font-size: 0.24rem;
+  font-weight: bold;
+}
+.main3 .box .box2 .top{
+  font-size: 0.16rem;
+}
+
+.main4{
+background: #f7f7f7;
+padding-bottom: 1.2rem;
+}
+.main4 > img{
+  width: 100%;
+  display: block;
+}
+.main4 .box{
+  width: 9.2rem;
+  margin: -1.2rem auto 0 auto;
+}
+.main4 .box .box1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 1.45rem;
+}
+.main4 .box .box1 .title{
+  text-align: center;
+  font-size: 0.42rem;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.5;
+  border-bottom: 0.06rem solid #fff;
+  padding-bottom: 0.12rem;
+  cursor: pointer;
+}
+.main4 .box .box1 .active{
+  opacity: 1;
+}
+
+.main4 .box .box2 > img{
+  width: 100%;
+  display: block;
+  height: 2.2rem;
+}
+
+.main5 {
+  width: 11rem;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.main5 .box{
+  display: flex;
+}
+.main5 .box .left {
+  padding-right: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.main5 .box .left >img {
+  width: 5.98rem;
+  height: 4.32rem;
+}
+.main5 .box .right{
+  flex: 1;
+}
+.main5 .box .right .nav{
+  display: flex;
+  width: 3.2rem;
+  font-size: 0.2rem;
+  margin-bottom: 0.22rem;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+.main5 .box .right .nav .nav-outer {
+  border-bottom: 0.01rem solid #46AF9F;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 3rem;
+}
+.main5 .box .right .nav .nav-yellow{
+  border-bottom: 0.01rem solid #CFBD4D;
+}
+.main5 .box .right .nav .nav1{
+  color: #46AF9F;
+  padding: 0.04rem;
+}
+.main5 .box .right .nav .nav1.active{
+  color: #fff;
+  background: #46AF9F;
+}
+.main5 .box .right .nav .arrow1{
+  padding-right: 0.1rem;
+  color: #46AF9F;
+  position: absolute;
+  left: -0.3rem;
+  padding-top: 0.03rem;
+}
+.main5 .box .right .nav .nav2{
+  color: #D3C649;
+  padding: 0.04rem;
+}
+.main5 .box .right .nav .nav2.active{
+  color: #fff;
+  background: #D3C649;
+}
+.main5 .box .right .nav .arrow2{
+  color: #D3C649;
+  padding-left: 0.1rem;
+  padding-top: 0.03rem;
+}
+.main5 .box .right .box1 .item{
+  display: flex;
+  padding-bottom: 0.04rem;
+}
+.main5 .box .right .box1 .item .title{
+  width: 1.2rem;
+}
+.main5 .box .right .box1 .item .tip{
+  flex: 1;
+}
+.main5 .box .right .box1 .item .tip .tip1{
+  color: #3BA695;
+}
+
+.main5 .box .right .box1 .mod-title{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top : 0.6rem;
+  padding-bottom: 0.25rem;
+}
+.main6 {
+  padding-bottom: 1.5rem;
+}
+.main6 .img{
+  width: 10.32rem;
+  height: 2.62rem;
+  margin: 0 auto 0.6rem auto;
+  display: block;
+}
+.main6 .box{
+  width: 6rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.main6 .box .img1{
+  width: 0.36rem;
+  height: 0.36rem;
+}
+.main6 .box .box1 {
+  line-height: 0.3rem;
+  font-size: 0.12rem;
+  padding-left: 0.2rem;
+}
+
+.main7 .link {
+  display: block;
+  padding-bottom: 0.6rem;
+  color: #46AF9F;
+  text-decoration: none;
+  text-align: center;
+}
+.main7 .box{
+  width: 9.4rem;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main7 .box .box1 {
+  text-align: center;
+  background-color: #F7F7F7;
+  color: #000;
+  font-size: 0.16rem;
+  padding: 0.1rem 0;
+}
+.main7 .box .item {
+  width: 2.6rem;
+}
+.main7 .box img{
+  width: 100%;
+  display: block;
+}
+.main7 .box .box1 .hover-line{
+  display: none;
+}
+.main7 .box .item:hover .box1 {
+  background-color: #3BA695;
+  color: #fff;
+}
+.main7 .box .item:hover .box1 .hover-line{
+  display: block;
+}
+.main8{
+  padding-bottom: 1.5rem;
+}
+.main8 .box{
+  width: 10.28rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main8 .box .item {
+  width: 4.74rem;
+  padding:  0.24rem 0;
+  box-shadow: 0 10px 10px #dedede;
+  text-align: center;
+  background: #DAEAE8;
+}
+.main8 .box .item .title {
+  padding-bottom: 0.2rem;
+  font-size: 0.2rem;
+  font-weight: bold;
+}
+.main8 .box .item .tip{
+  font-size: 0.16rem;
+  padding-bottom: 0.4rem;
+}
+.main8 .box .item .tip1{
+  font-size: 0.2rem;
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+}
+.main8 .box .item .tip1 .tip2{
+  color: #3BA695;
+}
+.main8 .box .item .tip1 .tip3 {
+  color: #CFBD4D;
+}
+
+.main8 .box .item .box1{
+  display: flex;
+  width: 3rem;
+  margin: 0 auto;
+  
+  justify-content: space-between;
+}
+.main8 .box .item .box2, .main8 .box .item .box3, .main8 .box .item .box4{
+  text-align: center;
+  color: #fff;
+  padding-top: 0.14rem;
+  font-size: 0.16rem;
+  background: #D5CA5E;
+  border-radius: 0.12rem;
+  height: 0.72rem;
+  width: 1.35rem;
+}
+.main8 .box .item .box3{
+  background: linear-gradient(to bottom, #40B09F, #205850);
+}
+.main8 .box .item .box4{
+  width: 3.6rem;
+}
+
+.main9 {
+  width: 10.84rem;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+.main9>.title {
+  font-size: 0.16rem;
+  padding-bottom: 0.6rem;
+}
+.main9 .box {
+  display: flex;
+}
+.main9 .left{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  width: 4.74rem;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+.main9 .left img{
+  width: 100%;
+  display: block;
+}
+.main9 .left .item{
+  position: relative;
+  width: 2.22rem;
+  margin-bottom: 0.4rem;
+}
+.main9 .left .item .tip, .main9 .right .tip, .main9 .right .tip{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 0.1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding-bottom: 0.1rem;
+}
+.main9 .left .item .tip span{
+  opacity: 1;
+  color: #fff;
+}
+.main9 .right{
+  flex: 1;
+  width: 4.74rem;
+  position: relative;
+}
+.main9 .right img{
+  width: 100%;
+  display: block;
 }
