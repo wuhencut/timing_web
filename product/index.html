@@ -58,14 +58,14 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="http://www.timinghub.com/assets/product/index/3.png" alt="">
-            <div class="box txt-black">
+            <div class="box txt-white">
               <p class="title">青厨垃圾处理设备</p>
               <p class="tip">针对垃圾类型: 厨余垃圾、湿垃圾、易腐垃圾、有机物</p>
             </div>
           </div>
           <div class="swiper-slide">
             <img src="http://www.timinghub.com/assets/product/index/4.png" alt="">
-            <div class="box txt-black">
+            <div class="box txt-white">
               <p class="title">青厨垃圾处理设备</p>
               <p class="tip">针对垃圾类型: 厨余垃圾、湿垃圾、易腐垃圾、有机物</p>
             </div>
@@ -146,9 +146,9 @@
       <img src="http://www.timinghub.com/assets/product/index/7.png" alt="">
       <div class="box">
         <div class="box1">
-          <span class="title" :class="{'active': active1 == 1}" @click="click1(1)">运行稳定</span>
-          <span class="title" :class="{'active': active1 == 2}" @click="click1(2)">运行稳定</span>
-          <span class="title" :class="{'active': active1 == 3}" @click="click1(3)">运行稳定</span>
+          <span class="title" :class="{'active': active1 == 1}" @mouseover="click1(1)">运行稳定</span>
+          <span class="title" :class="{'active': active1 == 2}" @mouseover="click1(2)">经济高效</span>
+          <span class="title" :class="{'active': active1 == 3}" @mouseover="click1(3)">改善环境</span>
         </div>
         <div class="box2">
           <img v-if="active1 == 1" src="http://www.timinghub.com/assets/product/index/8.png" alt="">
@@ -218,13 +218,13 @@
             </div>
             <div class="item">
               <div class="title">装机功率</div>
-              <div class="tip"><span v-if="active2 !=2" :class="{'tip1': active2 == 3}">60kW</span><span
+              <div class="tip"><span v-if="active2 !=2" :class="{'tip1': active2 == 3}"> 60kW </span><span
                   v-else>29kW</span></div>
             </div>
             <div class="item">
               <div class="title">运行功率</div>
-              <div class="tip"><span v-if="active2 !=2" :class="{'tip1': active2 == 3}">10-50kW</span><span
-                  v-else>2-25kW</span></div>
+              <div class="tip"><span v-if="active2 !=2" :class="{'tip1': active2 == 3}">10 - 50kW</span><span
+                  v-else>2 - 25kW</span></div>
             </div>
             <div class="item">
               <div class="title">重量</div>
@@ -234,7 +234,7 @@
               <div class="title">设备模块</div>
               <div class="tip">垃圾桶自动提升及称重、垃圾桶自动清洗装置、废水收集处理装置、活性炭除臭装置、自动出料装置、干化热压舱
                 <span v-if="active2 != 2">
-                  <span :class="{'tip1': active2 == 3}">标准版)</span>、<span :class="{'tip1': active2 == 3}">冷凝风机</span>
+                  <span :class="{'tip1': active2 == 3}">(标准版)</span>、<span :class="{'tip1': active2 == 3}">冷凝风机</span>
                 </span>
                 <span v-else>(轻量版)</span>
               </div>
