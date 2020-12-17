@@ -8,13 +8,16 @@
   <title>碳明科技（Timing）官网</title>
   <meta name="description"
     content="碳明科技是一家专注于实现垃圾就地资源化利用的科技创新型企业，产品涵盖不同体量的湿垃圾就地处理设备及物联网管理系统。公司拥有多项自主研发知识产权和一流的研发团队，核心技术包括高温破壁、干化脱水、炭化处理等。">
+    <meta name="keywords" content="湿垃圾处理、易腐垃圾处理、厨余垃圾处理、餐厨垃圾处理、湿垃圾就地处理、易腐垃圾
+  就地处理、厨余垃圾就地处理、餐厨垃圾就地处理、垃圾处理设备、垃圾处理器、垃圾就
+  地处理、餐厨垃圾减量、小型垃圾处理器、社区垃圾处理">
   <link rel="icon" href="../favicon.ico">
   <script src="../lib/rem.pc.js"></script>
   <link rel="stylesheet" href="../lib/swiper.min.css">
-  <link rel="stylesheet" href="../commom/basic.css?v=2">
-  <link rel="stylesheet" href="../commom/header.css?v=2">
-  <link rel="stylesheet" href="../commom/footer.css?v=4">
-  <link rel="stylesheet" href="./index.css?v=3">
+  <link rel="stylesheet" href="../commom/basic.css?v=3">
+  <link rel="stylesheet" href="../commom/header.css?v=3">
+  <link rel="stylesheet" href="../commom/footer.css?v=5">
+  <link rel="stylesheet" href="./index.css?v=4">
 </head>
 
 <body>
@@ -60,28 +63,28 @@
             <img src="http://www.timinghub.com/assets/product/index/3.png" alt="">
             <div class="box txt-white">
               <p class="title">青厨垃圾处理设备</p>
-              <p class="tip">针对垃圾类型: 厨余垃圾、湿垃圾、易腐垃圾、有机物</p>
+              <p class="tip">针对垃圾类型: 易腐垃圾、湿垃圾、餐厨垃圾、厨余垃圾、有机物</p>
             </div>
           </div>
           <div class="swiper-slide">
             <img src="http://www.timinghub.com/assets/product/index/4.png" alt="">
             <div class="box txt-white">
               <p class="title">青厨垃圾处理设备</p>
-              <p class="tip">针对垃圾类型: 厨余垃圾、湿垃圾、易腐垃圾、有机物</p>
+              <p class="tip">针对垃圾类型: 易腐垃圾、湿垃圾、餐厨垃圾、厨余垃圾、有机物</p>
             </div>
           </div>
           <div class="swiper-slide">
             <img src="http://www.timinghub.com/assets/product/index/2.png" alt="">
             <div class="box txt-white">
               <p class="title">青厨垃圾处理设备</p>
-              <p class="tip">针对垃圾类型: 厨余垃圾、湿垃圾、易腐垃圾、有机物</p>
+              <p class="tip">针对垃圾类型: 易腐垃圾、湿垃圾、餐厨垃圾、厨余垃圾、有机物</p>
             </div>
           </div>
           <div class="swiper-slide">
             <img src="http://www.timinghub.com/assets/product/index/1.png" alt="">
             <div class="box txt-white">
               <p class="title">青厨垃圾处理设备</p>
-              <p class="tip">针对垃圾类型: 厨余垃圾、湿垃圾、易腐垃圾、有机物</p>
+              <p class="tip">针对垃圾类型: 易腐垃圾、湿垃圾、餐厨垃圾、厨余垃圾、有机物</p>
             </div>
           </div>
         </div>
@@ -97,7 +100,7 @@
       <div class="item">
         <p class="title">10平方</p>
         <div class="box">
-          设备模块化设计生产，高度集成化制作，占地10平方米。安装运输，如商业电器般，即插即用。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          设备模块化设计生产，高度集成化制造，占地10平方米。安装运输，如商业电器般，即插即用。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
       <div class="item">
@@ -165,7 +168,8 @@
 
       <div class="box">
         <div class="left">
-          <img src="http://www.timinghub.com/assets/product/index/11.png" alt="">
+          <img v-if="active2 == 2" src="http://www.timinghub.com/assets/product/index/11.png" alt="">
+          <img v-else src="http://www.timinghub.com/assets/product/index/22.png" alt="">
         </div>
         <div class="right">
           <div class="nav">
@@ -192,7 +196,7 @@
           </div>
           <div class="item">
             <div class="title">效率</div>
-            <div class="tip">预处理 2小时/吨；<span v-if="active2 != 2">、<span :class="{'tip1': active2 == 3}">全处理
+            <div class="tip">预处理 2小时/吨<span v-if="active2 != 2">、<span :class="{'tip1': active2 == 3}">全处理
                   10小时/吨</span></span></div>
           </div>
           <div class="item">
@@ -202,7 +206,7 @@
           <div class="item">
             <div class="title">尺寸</div>
             <div class="tip">4.5 × 2.2 × <span v-if="active2 != 2" :class="{'tip1': active2 == 3}"> 2.6 m</span><span
-                v-else>2.45</span></div>
+                v-else>2.45m</span></div>
           </div>
           <div class="item">
             <div class="title">占地面积</div>
@@ -214,7 +218,7 @@
                 < 70 dB </span> <span v-else>
                   < 50db</span> </div> </div> <div class="item">
                     <div class="title">能耗</div>
-                    <div class="tip">3 x 380 V; 50 Hz; 160 A</div>
+                    <div class="tip">3 x 380 V; 50 Hz; <span v-if="active2 != 2">160A</span><span v-else>80A</span></div>
             </div>
             <div class="item">
               <div class="title">装机功率</div>
@@ -228,7 +232,7 @@
             </div>
             <div class="item">
               <div class="title">重量</div>
-              <div class="tip"><span class="tip">8顿</span></div>
+              <div class="tip"><span class="tip">8吨</span></div>
             </div>
             <div class="item">
               <div class="title">设备模块</div>
@@ -384,7 +388,7 @@
         <div class="info">
           <div class="title">
             <p class="content">杭州碳明科技有限公司</p>
-            <p class="tip">HANGZHOU TIMING TECHNOLOGY CO. LTD</p>
+            <p class="tip">HANGZHOU TIMING TECHNOLOGY CO.,LTD</p>
           </div>
           <p class="item">地址：浙江省杭州市余杭区海创园4幢502</p>
           <img class="qr-code" src="../static/qr-code.png" alt="">

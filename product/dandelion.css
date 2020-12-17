@@ -76,6 +76,10 @@
   display: inline-block;
   text-align: left;
 }
+.main2 .box4 .box5 {
+  font-size: 16px;
+  line-height: 28px;
+}
 .txt-right{
   text-align: right;
 }
