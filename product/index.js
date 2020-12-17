@@ -26,7 +26,7 @@ new Vue({
         pagination: {
           el: '.swiper-pagination',
         },
-        speed: 2000,
+        speed: 1000,
         autoplay: {
           delay: 5000,
         },
