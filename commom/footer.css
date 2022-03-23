@@ -1,4 +1,4 @@
-.footer .wrapper{
+.footer .wrapper {
   display: flex;
   padding-top: 55px;
   padding-bottom: 35px;
@@ -7,16 +7,20 @@
   color: hsl(0, 0%, 40%);
   font-size: 12px;
 }
-.footer .law-info{
+.footer .law-info {
   text-align: center;
   padding-bottom: 20px;
 }
-.footer .law-info a{
+.footer .law-info a {
   color: hsl(0, 0%, 40%);
   text-decoration: none;
 }
-.footer .wrapper .info{
-  flex: 1
+.footer .wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+.footer .wrapper .info {
+  flex: 1;
 }
 .footer .wrapper .info .title {
   height: 50px;
@@ -24,7 +28,7 @@
   font-weight: bold;
   color: #000000;
 }
-.footer .wrapper .info .title .tip{
+.footer .wrapper .info .title .tip {
   font-size: 12px;
   color: #666;
 }

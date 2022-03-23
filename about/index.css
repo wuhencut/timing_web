@@ -1,4 +1,4 @@
-.main1{
+.main1 {
   background: url("./img/index-6.png") center center no-repeat;
   background-size: cover;
   height: 100vh;
@@ -6,64 +6,64 @@
   align-items: center;
   justify-content: center;
 }
-.main1 .wrapper .title{
+.main1 .wrapper .title {
   font-size: 32px;
   padding-bottom: 12px;
 }
-.main1 .wrapper .tip{
+.main1 .wrapper .tip {
   font-size: 18px;
 }
-.main2{
+.main2 {
   padding-top: 30px;
 }
-.main2 .title{
+.main2 .title {
   font-size: 32px;
   text-align: center;
   padding: 70px 0 50px 0;
 }
-.main2 .wrapper1{
+.main2 .wrapper1 {
   width: 792px;
   margin: 0 auto;
   display: flex;
 }
-.main2 .wrapper1 .img{
+.main2 .wrapper1 .img {
   width: 327px;
   margin-right: 42px;
 }
-.main2 .wrapper1 .content{
-  flex: 1;
+.main2 .wrapper1 .content {
+  /* flex: 1; */
   font-size: 14px;
   color: #333333;
 }
-.main2 .wrapper2{
+.main2 .wrapper2 {
   width: 832px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
   text-align: center;
 }
-.main2 .wrapper2 .item .img{
+.main2 .wrapper2 .item .img {
   width: 200px;
   display: block;
 }
-.main2 .wrapper2 .item .tip1{
+.main2 .wrapper2 .item .tip1 {
   padding: 18px 0 6px 0;
   font-weight: bold;
   font-size: 20px;
 }
-.main2 .wrapper2 .item .tip2{
+.main2 .wrapper2 .item .tip2 {
   font-size: 18px;
   color: #333;
 }
-.main3{
-  padding: 100px 0; 
+.main3 {
+  padding: 100px 0;
 }
-.main3 .title{
+.main3 .title {
   font-size: 32px;
   padding-bottom: 40px;
   text-align: center;
 }
-.main3 .img{
+.main3 .img {
   display: block;
   width: 852px;
   margin: 0 auto;
